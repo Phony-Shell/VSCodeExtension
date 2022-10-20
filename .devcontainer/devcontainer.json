@@ -23,9 +23,8 @@
 		}
 	},
 
-  // Install VSCodeExtension Develop tool
-  // Initialize git (this initialize is not contain "git config user.(info) userInfo")
-  "postCreateCommand": "npm install -g yo generator-code vsce && git config --global --add safe.directory /workspaces/VSCodeExtension",
+  // Install and Initialize
+  "postCreateCommand": "/workspaces/VSCodeExtension/.devcontainer/init.sh",
 
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "node"
